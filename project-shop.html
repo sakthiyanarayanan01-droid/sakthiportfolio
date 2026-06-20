@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verdant Plant Shop — Case Study | Sakthi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="dot"></span>sakthi.dev</a>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <a href="index.html#contact" class="nav-cta">get_in_touch()</a>
+  </div>
+</nav>
+
+<section class="case-hero">
+  <div class="wrap">
+    <a href="index.html#work" class="back-link">← back to all projects</a>
+    <div class="case-title-row">
+      <h1>Verdant Plant Shop — a catalog-style storefront that loads fast, even image-heavy.</h1>
+      <div class="case-meta">
+        <span><strong>Client</strong>local plant & garden shop</span>
+        <span><strong>Role</strong>frontend developer</span>
+        <span><strong>Timeline</strong>2.5 weeks</span>
+      </div>
+    </div>
+    <p class="sub">A product catalog lives and dies by its images — but image-heavy pages are usually the slowest. The challenge was making a browsable, photo-rich shop that still loads quickly on an average connection.</p>
+
+    <div class="case-visual">
+      <div class="mini-bar"><span></span><span></span><span></span></div>
+      <div class="mock-frame" style="background:linear-gradient(160deg,#0F211C,#0A1614);">
+        <div class="mock-line" style="background:rgba(255,255,255,.12); width:26%; height:16px;"></div>
+        <div style="display:flex; gap:10px; margin-top:8px; flex:1;">
+          <div class="mock-line" style="background:rgba(255,255,255,.10); width:23%; height:100%;"></div>
+          <div class="mock-line" style="background:rgba(255,255,255,.10); width:23%; height:100%;"></div>
+          <div class="mock-line" style="background:var(--coral); opacity:.5; width:23%; height:100%;"></div>
+          <div class="mock-line" style="background:rgba(255,255,255,.10); width:23%; height:100%;"></div>
+        </div>
+        <div class="mock-line" style="background:rgba(255,255,255,.10); width:40%; height:11px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="wrap">
+    <div class="case-grid">
+      <div>
+        <div class="case-block">
+          <span class="tag">the problem</span>
+          <h2>A catalog that took 8 seconds to show a single leaf.</h2>
+          <p>Verdant's previous site loaded every product photo at full resolution, all at once. On mobile data, the homepage alone could take the better part of ten seconds — long enough for most visitors to give up before seeing a single plant.</p>
+        </div>
+
+        <div class="case-block">
+          <span class="tag">the approach</span>
+          <h2>Treat performance as a feature, not an afterthought.</h2>
+          <p>Every product image is compressed and served at the size it's actually displayed, with lazy-loading so only visible images load first. Filters (light needs, pet-safe, price) let visitors narrow the catalog instead of scrolling through everything.</p>
+          <ul>
+            <li>Image pipeline: compressed, modern formats, explicit width/height to prevent layout shift</li>
+            <li>Client-side filtering with plain JavaScript — no page reloads</li>
+            <li>Grid that reflows cleanly from 4 columns down to 1 on mobile</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <span class="tag">the build</span>
+          <h2>HTML & CSS doing the heavy lifting.</h2>
+          <p>The catalog grid is pure CSS Grid with no layout library needed. JavaScript is reserved for filtering logic and the product quick-view modal, keeping the page light and fast to parse.</p>
+        </div>
+      </div>
+
+      <aside class="case-side">
+        <div class="case-side-row">
+          <span class="label">stack</span>
+          <div class="case-side-tags">
+            <span>HTML</span><span>CSS</span><span>UI/UX</span>
+          </div>
+        </div>
+        <div class="case-side-row">
+          <span class="label">focus</span>
+          <span class="value">Performance-first catalog, filterable grid</span>
+        </div>
+        <div class="case-side-row">
+          <span class="label">deliverables</span>
+          <span class="value">Responsive storefront, optimized image pipeline, filter UI</span>
+        </div>
+        <a href="#" class="btn-primary">view live site →</a>
+      </aside>
+    </div>
+
+    <div class="case-results">
+      <div class="case-result-stat">
+        <div class="num">~70%</div>
+        <div class="label">smaller image payload</div>
+      </div>
+      <div class="case-result-stat">
+        <div class="num">&lt;2s</div>
+        <div class="label">homepage load on mobile</div>
+      </div>
+      <div class="case-result-stat">
+        <div class="num">4 → 1</div>
+        <div class="label">grid columns, desktop to mobile</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="case-nav wrap" style="max-width:1180px; margin:0 auto;">
+  <a href="project-salon.html">← Lumière Hair Studio</a>
+  <a href="index.html#contact">let's build yours →</a>
+</div>
+
+<footer>
+  © 2026 Sakthi — built with HTML, CSS & JavaScript, no frameworks harmed.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumière Hair Studio — Case Study | Sakthi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="dot"></span>sakthi.dev</a>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <a href="index.html#contact" class="nav-cta">get_in_touch()</a>
+  </div>
+</nav>
+
+<section class="case-hero">
+  <div class="wrap">
+    <a href="index.html#work" class="back-link">← back to all projects</a>
+    <div class="case-title-row">
+      <h1>Lumière Hair Studio — a booking-first site that fills the chair, not just the gallery.</h1>
+      <div class="case-meta">
+        <span><strong>Client</strong>hair & beauty salon</span>
+        <span><strong>Role</strong>frontend developer</span>
+        <span><strong>Timeline</strong>3 weeks</span>
+      </div>
+    </div>
+    <p class="sub">Salon sites usually optimize for looking pretty. This one needed to optimize for getting booked — so the "Book now" action follows you down the page on every device.</p>
+
+    <div class="case-visual">
+      <div class="mini-bar"><span></span><span></span><span></span></div>
+      <div class="mock-frame" style="background:linear-gradient(160deg,#241221,#160A14);">
+        <div class="mock-line" style="background:rgba(255,255,255,.12); width:38%; height:18px;"></div>
+        <div class="mock-line" style="background:var(--coral); opacity:.7; width:26%; height:11px; margin-top:6px;"></div>
+        <div style="display:flex; gap:10px; margin-top:10px; flex:1;">
+          <div class="mock-line" style="background:rgba(255,255,255,.10); width:31%; height:100%;"></div>
+          <div class="mock-line" style="background:rgba(255,255,255,.10); width:31%; height:100%;"></div>
+          <div class="mock-line" style="background:rgba(255,255,255,.10); width:31%; height:100%;"></div>
+        </div>
+        <div class="mock-line" style="background:var(--coral); opacity:.5; width:24%; height:14px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="wrap">
+    <div class="case-grid">
+      <div>
+        <div class="case-block">
+          <span class="tag">the problem</span>
+          <h2>Gorgeous Instagram reel, no way to book from it.</h2>
+          <p>Lumière's audience found them through short-form video, tapped through to their old site, and bounced — there was a phone number buried in a "Contact" page and nothing else. Every missed booking was a lost client.</p>
+        </div>
+
+        <div class="case-block">
+          <span class="tag">the approach</span>
+          <h2>Make booking the obvious next step, everywhere.</h2>
+          <p>Rather than a single contact form at the bottom, "Book now" is a persistent action — in the nav, after the gallery, after pricing, and pinned to the bottom of the screen on mobile. The gallery and service list are real content the salon can swap themselves.</p>
+          <ul>
+            <li>Sticky mobile booking bar that appears after the first scroll</li>
+            <li>Service & pricing table that reads clearly on a small screen</li>
+            <li>Lightweight gallery grid using lazy-loaded, compressed images</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <span class="tag">the build</span>
+          <h2>Bootstrap grid, custom everything else.</h2>
+          <p>Used Bootstrap's grid system to move fast on layout, then layered custom CSS on top so it didn't look like a Bootstrap template. JavaScript handles the gallery lightbox and the sticky booking bar's show/hide behavior.</p>
+        </div>
+      </div>
+
+      <aside class="case-side">
+        <div class="case-side-row">
+          <span class="label">stack</span>
+          <div class="case-side-tags">
+            <span>Bootstrap</span><span>JavaScript</span><span>Responsive</span>
+          </div>
+        </div>
+        <div class="case-side-row">
+          <span class="label">focus</span>
+          <span class="value">Conversion-first layout, mobile booking flow</span>
+        </div>
+        <div class="case-side-row">
+          <span class="label">deliverables</span>
+          <span class="value">Responsive site, photo gallery, pricing table, booking CTAs</span>
+        </div>
+        <a href="#" class="btn-primary">view live site →</a>
+      </aside>
+    </div>
+
+    <div class="case-results">
+      <div class="case-result-stat">
+        <div class="num">4</div>
+        <div class="label">booking CTAs placed across the page</div>
+      </div>
+      <div class="case-result-stat">
+        <div class="num">100%</div>
+        <div class="label">mobile-friendly score</div>
+      </div>
+      <div class="case-result-stat">
+        <div class="num">1 tap</div>
+        <div class="label">to reach booking from any section</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="case-nav wrap" style="max-width:1180px; margin:0 auto;">
+  <a href="project-cafe.html">← Brew & Co. Café</a>
+  <a href="project-shop.html">next: Verdant Plant Shop →</a>
+</div>
+
+<footer>
+  © 2026 Sakthi — built with HTML, CSS & JavaScript, no frameworks harmed.
+</footer>
+
+</body>
+</html>

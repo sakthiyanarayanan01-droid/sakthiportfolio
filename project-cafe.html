@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brew & Co. Café — Case Study | Sakthi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="dot"></span>sakthi.dev</a>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <a href="index.html#contact" class="nav-cta">get_in_touch()</a>
+  </div>
+</nav>
+
+<section class="case-hero">
+  <div class="wrap">
+    <a href="index.html#work" class="back-link">← back to all projects</a>
+    <div class="case-title-row">
+      <h1>Brew & Co. Café — a menu-first site built to turn scrollers into walk-ins.</h1>
+      <div class="case-meta">
+        <span><strong>Client</strong>independent café, single location</span>
+        <span><strong>Role</strong>frontend developer</span>
+        <span><strong>Timeline</strong>2 weeks</span>
+      </div>
+    </div>
+    <p class="sub">The brief was simple: most visitors check the menu and hours on their phone while standing outside, so the site needed to answer those two questions in under three seconds.</p>
+
+    <div class="case-visual">
+      <div class="mini-bar"><span></span><span></span><span></span></div>
+      <div class="mock-frame" style="background:linear-gradient(160deg,#2B1A12,#1A0F0A);">
+        <div class="mock-line" style="background:rgba(255,255,255,.12); width:30%; height:18px;"></div>
+        <div class="mock-line" style="background:var(--coral); opacity:.7; width:46%; height:11px; margin-top:6px;"></div>
+        <div class="mock-line" style="background:rgba(255,255,255,.10); width:70%; height:11px;"></div>
+        <div style="flex:1;"></div>
+        <div style="display:flex; gap:10px;">
+          <div class="mock-line" style="background:rgba(255,255,255,.10); width:23%; height:90px;"></div>
+          <div class="mock-line" style="background:rgba(255,255,255,.10); width:23%; height:90px;"></div>
+          <div class="mock-line" style="background:rgba(255,255,255,.10); width:23%; height:90px;"></div>
+          <div class="mock-line" style="background:var(--coral); opacity:.5; width:23%; height:90px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="wrap">
+    <div class="case-grid">
+      <div>
+        <div class="case-block">
+          <span class="tag">the problem</span>
+          <h2>A beautiful Instagram, an outdated website.</h2>
+          <p>Brew & Co. had loyal regulars and a strong social following, but their old site was a slow, unstyled template with an out-of-date menu PDF. New visitors couldn't tell if they were open, what they served, or where to park — so they left.</p>
+        </div>
+
+        <div class="case-block">
+          <span class="tag">the approach</span>
+          <h2>Design for the phone in someone's hand.</h2>
+          <p>I started from the mobile layout, not the desktop one. The hero leads with hours and a map pin. The menu is rendered as real HTML, not a PDF, so it's searchable, fast, and easy for the café to update themselves.</p>
+          <ul>
+            <li>Sticky "Order & hours" bar that stays visible while scrolling</li>
+            <li>Menu organized by daypart (breakfast / lunch / pastries) instead of one long list</li>
+            <li>Compressed, lazy-loaded photography so the page stays fast on mobile data</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <span class="tag">the build</span>
+          <h2>Clean markup, no bloat.</h2>
+          <p>Built with semantic HTML and hand-written CSS — no heavy frameworks for a page this size. A small JavaScript layer handles the menu filters and the mobile nav. Every image ships in a modern format with explicit sizing to avoid layout shift.</p>
+        </div>
+      </div>
+
+      <aside class="case-side">
+        <div class="case-side-row">
+          <span class="label">stack</span>
+          <div class="case-side-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+        <div class="case-side-row">
+          <span class="label">focus</span>
+          <span class="value">Mobile-first, fast-loading, easy to update</span>
+        </div>
+        <div class="case-side-row">
+          <span class="label">deliverables</span>
+          <span class="value">Responsive site, editable menu structure, basic SEO setup</span>
+        </div>
+        <a href="#" class="btn-primary">view live site →</a>
+      </aside>
+    </div>
+
+    <div class="case-results">
+      <div class="case-result-stat">
+        <div class="num">&lt;1.5s</div>
+        <div class="label">mobile load time</div>
+      </div>
+      <div class="case-result-stat">
+        <div class="num">100%</div>
+        <div class="label">mobile-friendly score</div>
+      </div>
+      <div class="case-result-stat">
+        <div class="num">3</div>
+        <div class="label">clicks to find hours</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="case-nav wrap" style="max-width:1180px; margin:0 auto;">
+  <a href="index.html#work">← all projects</a>
+  <a href="project-salon.html">next: Lumière Hair Studio →</a>
+</div>
+
+<footer>
+  © 2026 Sakthi — built with HTML, CSS & JavaScript, no frameworks harmed.
+</footer>
+
+</body>
+</html>
