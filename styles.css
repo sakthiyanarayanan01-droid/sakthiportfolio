@@ -380,6 +380,10 @@ section{padding:110px 0;}
 .mock-frame.cafe{background:linear-gradient(160deg,#2B1A12,#1A0F0A);}
 .mock-frame.salon{background:linear-gradient(160deg,#241221,#160A14);}
 .mock-frame.shop{background:linear-gradient(160deg,#0F211C,#0A1614);}
+.mock-frame.gym {
+  background: linear-gradient(160deg, #1a1c1e, #0f1011);
+  border-left: 3px solid var(--coral);
+}
 .mock-frame .mock-line.dark{background:rgba(255,255,255,0.10);}
 .mock-frame .mock-line.accent{background:var(--coral); opacity:.7;}
 
